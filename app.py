@@ -1,50 +1,29 @@
-import flask
-import pandas as pd
-import sqlalchemy
-import joblib
-from flask import Flask, jsonify, render_template, request
-from sqlalchemy.ext.automap import automap_base
-from sqlalchemy.orm import Session
-from sqlalchemy import create_engine
+# import module
+from flask import Flask, render_template, redirect, request, jsonify
 
-engine = create_engine("sqlite:///trivia_db.db")
-
+# Create an instance of Flask
 app = Flask(__name__)
 
-login_list = pd.read_sql('SELECT * FROM login_table', con = engine)
-scoring_list = pd.read_sql('SELECT * FROM scoring_table', con = engine)
-question_list = pd.read_sql('SELECT * FROM question_table', con = engine)
-
+# Create route / index.html must stay outside of templates folder in same path as app.py
 @app.route("/")
-def home():
+def index():
     return render_template("index.html")
 
-@app.route("/api/v1.0/login_table")
-def login_table():
-    session = Session(engine)
-    results = login_list.to_dict('records')
-    return jsonify(results)    
-    session.close()
+@app.route("/index1") # Can change "/index1" to the "top left" tab name  
+def index1(): # Can change index1 to descriptive route name
+    return render_template("index1.html") # Can change "index1.html" to the renamed HTML title
 
-@app.route("/api/v1.0/scoring_table")
-def scoring_table():
-    session = Session(engine)
-    results2 = scoring_list.to_dict('records')
-    return jsonify(results2)
-    session.close()
+@app.route("/index2")
+def index2():
+    return render_template("index2.html")
 
-@app.route("/api/v1.0/question_table")
-def question_table():
-    session = Session(engine)
-    results3 = question_list.to_dict('records')
-    return jsonify(results3)
-    session.close()
+@app.route("/index3")
+def index3():
+    return render_template("index3.html")
+
+@app.route("/index4")
+def index4():
+    return render_template("index4.html")
 
 if __name__ == "__main__":
-    app.run()
-
-
-
-
-
-
+    app.run(debug=True)
