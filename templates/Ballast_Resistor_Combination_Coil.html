@@ -1,114 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
   <meta charset="UTF-8">
-  <title>Home Page</title>
+  <title>Bootstrap Components</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-<head>
-<style>
-body {
-  background-image: image();
-  background-image: url("/resources/RF_Background.jpg");  /* Site Owner can Provide New Background Pic - need to keep Resources Path  */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
-</style>
+  <style>
+    body {
+      background-image: image();
+      background-image: url("/resources/RF_Background.jpg");  /* Site Owner can Provide New Background Pic - need to keep Resources Path  */
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    </style>
 </head>
 <body>
-  <div style="background-image: url('/resources/Made\ in\ USA.png');"></div>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/index.html">JRF Engineering</a>
-    
+    <a class="navbar-brand" href="/templates/Ballast_Resistor_Combination_Coil.html">Ballast Resistor Combination Coil</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        
         <li class="nav-item active">
-          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
         </li>
-        
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
-          
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Products
+          </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Ballast Resistor Combination Coil</a>
-            <a class="dropdown-item" href="#">Dashboard Digital Analyzer</a>
+            <a class="dropdown-item" href="Ballast_Resistor_Combination_Coil.html">Ballast Resistor Combination Coil</a>
+            <a class="dropdown-item" href="Dashboard_Digital_Analyzer.html">Dashboard Digital Analyzer</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Speed Ingerrence Radar</a>
+            <a class="dropdown-item" href="Speed_Inference_Radar.html">Speed Inference Radar</a>
           </div>
-
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/templates/index2.html">About</a>            
-        </li>  
+          <a class="nav-link" href="/templates/about.html">About</a>
+        </li>
       </ul>
-
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
   </nav>
-<!-- 
-  <div class="row" style="height:471px">
-    <div class="span9 offset3">        
-      <div id="homeBanner">
-     
 
-      <div class="banner-wrapper">
-
-      <div class="cycle-slideshow clear tootTipBox" 
-      data-hasqtip="0" data-cycle-fx="scrollHorz" data-cycle-timeout="5000" 
-      data-cycle-slides="> a" data-cycle-prev=".cycle-prev" data-cycle-next=".cycle-next" 
-      data-cycle-swipe="true" data-cycle-speed="700" data-cycle-pause-on-hover="true" 
-      data-cycle-log="false" style="position: relative; overflow: hidden;">
-
-        <a href="templates/index1.html" class="cycle-slide cycle-sentinel" 
-        style="position: static; top: 0px; left: 0px; z-index: 100; opacity: 1; visibility: hidden; display: block;">
-
-          <img src="../resources/PicOne.png" width="745px" height="446px" 
-          title="5G Brochure" alt="" style="visibility: hidden;"></a> 
-                    
-        <a href="templates/index2.html" class="cycle-slide" 
-        style="position: absolute; top: 0px; left: 0px; z-index: 97; opacity: 1; display: none;">
-
-          <img src="../resources/PicTwo.png" width="745px" height="446px" 
-          title="Placeholder 99" alt=""></a>
-          
-          <a href="templates/index3.html" class="cycle-slide cycle-slide-active" 
-          style="position: absolute; top: 0px; left: 0px; z-index: 99; display: block; opacity: 1;">
-
-            <img src="../resources/Resistor.png" width="745px" height="446px" 
-            title="Placeholder 6" alt=""></a>
-            
-            <a href="templates/index4.html" class="cycle-slide" 
-            style="position: absolute; top: 0px; left: 0px; z-index: 97; display: none; opacity: 1;">
-              
-              <img src="../resources/PicFour.png" width="745px" height="446px" 
-              title="Placeholder 9" alt=""></a>
-
-              <a class="cycle-slide" 
-              style="position: absolute; top: 0px; left: 0px; z-index: 96; display: none; opacity: 1;">
-                
-                <img src="../resources/PicOne.png" width="745px" height="446px" 
-                title="Right Parts Right Away" alt=""></a>
-              
-              </div> -->
-                            
-      <div class="icons-msg">
-      <a class="cycle-prev"><em class="icon-chevron-sign-left"></em></a>
-      <a class="cycle-next"><em class="icon-chevron-sign-right"></em></a>      
-      </div>
-      </div>
-</div>
-        
-</div>
-   
+<div class="container">
+  <h3 class="text-center">Thumbnails</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="../resources/JRF.jpg" alt="..." class="img-thumbnail">
+            </div>
+            <div class="caption">
+                <h3>Thumbnail label</h3>
+                <p>...</p>
+          </div>
         </div>
- </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
