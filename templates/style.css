@@ -1,0 +1,13 @@
+/* Navbar container */
+.navbar {
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
+  }
+
+/* Home Page Thumbnail Icons */
+  .thumbnail {
+    max-width: 175px;
+    position: relative;
+    margin: auto;
+  }
